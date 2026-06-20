@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+    <title>MIT OCW Downloader</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="card">
+        <div class="card-top">
+          <h1 class="title">MIT OCW Downloader</h1>
+          <span class="status-badge status-idle" id="status-badge">Idle</span>
+        </div>
+        <p class="subtitle">Download MIT OpenCourseWare resources with a single click.</p>
+
+        <div class="field">
+          <label>COURSE URL</label>
+          <input type="text" id="url-input" placeholder="https://ocw.mit.edu/courses/..." />
+        </div>
+
+        <div class="field">
+          <label>DOWNLOAD FOLDER</label>
+          <div class="row">
+            <input type="text" id="folder-input" placeholder="Click Browse to select a folder..." readonly />
+            <button id="browse-btn">Browse</button>
+            <button id="download-btn">Download</button>
+          </div>
+        </div>
+
+        <hr class="divider" />
+
+        <div class="prog-header">
+          <span id="prog-label">Waiting to start</span>
+          <span id="prog-pct">0%</span>
+        </div>
+        <div class="track">
+          <div class="fill" id="prog-fill"></div>
+        </div>
+
+        <div class="log-header">
+          <span class="log-title">Logs</span>
+          <button class="toggle-btn" id="toggle-btn">Show logs</button>
+        </div>
+        <div class="log-box" id="log-box" style="display: none;">
+          <p class="log-placeholder">Logs will appear here once you start a download.</p>
+        </div>
+      </div>
+    </div>
+    <script src="/static/script.js"></script>
+  </body>
+</html>
