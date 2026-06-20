@@ -2,7 +2,7 @@
 
 > Download full MIT OpenCourseWare courses with just a couple of clicks.
 
-![MIT OCW Downloader UI](Capture.png)
+![MIT OCW Downloader UI](Capture.PNG)
 
 ---
 
